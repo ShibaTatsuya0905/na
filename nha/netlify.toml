@@ -1,4 +1,4 @@
 [build]
-  publish = "dist"
+  publish = "public"
   functions = "netlify/functions"
   command = "npm run build"  # Giả sử bạn có lệnh "build" trong package.json của bạn
