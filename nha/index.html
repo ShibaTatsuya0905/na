@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Bệnh Án</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gay">
+        
+      </div>
+    <div class="container">
+       <div class="hoso"> <h1>Hồ Sơ</h1></div>
+        <form id="medical-form">
+            <input type="hidden" id="record-id">
+            <input type="text" id="name" placeholder="Họ và Tên" required>
+            <input type="number" id="age" placeholder="Tuổi" required>
+            <input type="datetime-local" id="disease" placeholder="Giờ hẹn" required>
+            <textarea id="description" placeholder="Mô Tả Chi Tiết"></textarea>
+            <button type="submit" class="save">Lưu Hồ Sơ</button>
+        </form>
+        <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm...">
+
+        <h2>Danh Sách Hồ Sơ</h2>
+        <ul id="records-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

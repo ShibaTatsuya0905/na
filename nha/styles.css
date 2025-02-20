@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center; /* Loại bỏ để căn trái nội dung */
+    margin: 0; /* Loại bỏ margin mặc định của body */
+}
+
+
+h1{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+
+h2{
+    position: absolute;
+    top: 3%;
+    right: 30%;
+}
+
+.container {
+    width: 100%; /* Mở rộng container ra toàn bộ chiều rộng */
+    max-width: none; /* Loại bỏ max-width để container mở rộng hết cỡ */
+    margin: 0; /* Loại bỏ margin mặc định của container */
+    padding: 20px;
+    display: flex; /* Sử dụng Flexbox để chia bố cục trái-phải */
+    flex-wrap: wrap; /* Cho phép container xuống dòng nếu cần */
+}
+
+/* Style cho phần đăng ký hồ sơ (bên trái) */
+#medical-form {
+    width: 50%; /* Chiếm 45% chiều rộng container */
+    padding: 20px;
+    text-align: left; /* Căn trái nội dung trong form */
+}
+
+/* Style cho input và textarea trong form */
+#medical-form input,
+#medical-form textarea {
+    position: relative;
+    top: 80%;
+    left: -3%;
+    width: 50%; /* Mở rộng input và textarea trong form */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style cho phần danh sách hồ sơ (bên phải) */
+#records-list-container {
+    width: 55%; /* Chiếm 55% chiều rộng container */
+    padding: 20px;
+    text-align: left; /* Căn trái nội dung trong container */
+}
+
+/* Style cho danh sách hồ sơ */
+#records-list {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    list-style: none;
+    padding: 0;
+    display: flex; /* Sử dụng Flexbox để hiển thị theo hàng ngang */
+    flex-wrap: wrap; /* Cho phép xuống dòng khi hết chỗ */
+    justify-content: flex-start; /* Căn chỉnh các phần tử từ trái sang phải */
+}
+
+/* Style cho mỗi mục hồ sơ */
+#records-list li {
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    width: auto; /* Cho phép các phần tử tự điều chỉnh chiều rộng */
+    flex: 0 1 auto; /* Ngăn các phần tử co lại */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+}
+
+input, textarea, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    width: auto; /* Quan trọng: Đặt width về auto để vừa nội dung */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+    margin-right: 5px; /* Thêm khoảng cách giữa các nút */
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 5px; /* Thêm khoảng cách giữa các nút */
+}
+
+/* Style cho ô tìm kiếm */
+#search-input {
+   position: relative;
+   left: 25%;
+   width: 15%;
+   height: 10%;
+   border-radius: 30px;
+}
+
+.save{
+    position: relative;
+    left: -42%;
+    top: 90%;
+    width: 27%;
+}
+
+.gay {
+    position:absolute; /* Thay đổi thành absolute để chiếm hết chiều cao */
+    top: 0; /* Bắt đầu từ đỉnh trang */
+    left: 29%; /* Căn giữa theo chiều ngang */
+    width: 0.01%; /* Độ dày của cây gậy */
+    height: 100%; /* Chiều cao bằng 100% chiều cao của trang */
+    background-color: green; /* Màu sắc của cây gậy */
+    border-radius: 5px; /* Bo tròn đầu cây gậy */
+}
+
