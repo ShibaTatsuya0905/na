@@ -1,4 +1,13 @@
 [build]
-  publish = "dist"
-  functions = "netlify/functions"
-  command = "npm run build"  # Giả sử bạn có lệnh "build" trong package.json của bạn
+  publish = "public"  # Thư mục chứa các file tĩnh (HTML, CSS, JavaScript)
+  functions = "netlify/functions"  # Thư mục chứa các Netlify Functions
+  command = "npm install && npm run build"  # Lệnh để build ứng dụng
+
+[dev]
+  framework = "#custom" # Đặt framework là custom vì bạn không dùng static site generator
+  command = "npm run start" # Câu lệnh chạy dev server
+  port = 9050 # port của server, nếu có
+
+[template]
+  [template.environment]
+    NODE_VERSION = "22" # ví dụ, version nodejs cần thiết
